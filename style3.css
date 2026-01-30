@@ -1,1 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
+
+img, picture, video, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero{
+    min-height: 100vh;
+    padding: 4rem 1rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(gotcha.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+h1{
+    font-size: clamp(1.5rem, 6vw, 4rem);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.timebox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.time{
+    text-align: center;
+     flex: 1 1 140px;
+    min-width: 120px;
+}
+
+.time h2{
+    font-size: clamp(2.2rem, 10vw, 5rem);
+    font-weight: 100;
+    margin: 0;
+}
+
+/* Transparent button used for Vday Itinerary */
+.btn-transparent{
+    background: rgba(255,255,255,0.06);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.18);
+    padding: 0.5rem 0.9rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    transition: background 150ms ease, transform 120ms ease;
+}
+.btn-transparent:hover{
+    background: rgba(255,255,255,0.12);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+    .btn-transparent{
+        order: 1;
+        align-self: flex-end;
+        margin: 0 0.6rem 0.25rem 0;
+        padding: 0.35rem 0.65rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero { padding: 3rem 1rem; }
+    h1 { font-size: clamp(1.6rem, 5.5vw, 3rem); }
+}
+
+@media (max-width: 768px) {
+    .hero { padding: 2.5rem 0.75rem; }
+    .timebox { gap: 1rem; }
+    h1 { font-size: clamp(1.4rem, 6.5vw, 2.2rem); }
+    .time h2 { font-size: clamp(1.8rem, 12vw, 3rem); }
+}
+
+@media (max-width: 480px) {
+    .hero { padding: 2rem 0.5rem; justify-content: flex-end; }
+    .timebox {
+        order: 3;
+        gap: 0.5rem;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 0 0.5rem;
+        width: 100%;
+        margin-bottom: 0.75rem;
+    }
+    h1 {
+        order: 2;
+        align-self: flex-end;
+        margin: 0 0.6rem 0.25rem 0;
+        text-align: right;
+        font-size: clamp(1rem, 6vw, 1.8rem);
+    }
+    .time {
+        flex: 0 0 auto;
+        min-width: 80px;
+        padding: 0.25rem 0.5rem;
+    }
+    .time h2 { font-size: clamp(1rem, 8vw, 1.6rem); line-height: 1; white-space: nowrap; }
+ }
