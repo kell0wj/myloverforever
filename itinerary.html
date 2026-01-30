@@ -3,50 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bookie and Bubba Valentine's Day 💕</title>
+  <title>Anniversary Weekend Itinerary 💕</title>
   <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
-  <header>
-    <h1>Happy Valentine's Bookie! ❤️</h1>
-    <p>Our Saturday Itinerary</p>
-  </header>
+  <h1>Our Anniversary Weekend 💖</h1>
+  <p>Click each day to see the plans</p>
 
-  <main>
+  <!-- Friday -->
+  <div class="accordion-item">
+    <button class="accordion-btn" onclick="toggleDay('friday')">
+      Breakfast 🌙
+    </button>
 
-    <section class="day">
-      <h2>Friday Night 🌙</h2>
-      <ul>
-        <li>6:30 PM – Dinner at Go Nonna 🍝</li>
-        <li>8:00 PM – Dessert Walk 🍦</li>
-        <li>9:30 PM – Movie + Relax at Hotel 🎥</li>
-      </ul>
-    </section>
+    <div class="accordion-content" id="friday">
+      <p>11:00 AM - 11:30PM – Coffee & Pastries @ Le Cafe Coffee or Slate Coffee 🍝</p>
+      <p>8:00 PM – Ice Cream Walk 🍦</p>
+      <p>9:30 PM – Movie + Relax 🎥</p>
+    </div>
+  </div>
 
-    <section class="day">
-      <h2>Saturday 💖</h2>
-      <ul>
-        <li>10:00 AM – Breakfast Date ☕</li>
-        <li>12:00 PM – Explore NYC 🏙️</li>
-        <li>6:00 PM – Surprise Activity 🎁</li>
-      </ul>
-    </section>
+  <!-- Saturday -->
+  <div class="accordion-item">
+    <button class="accordion-btn" onclick="toggleDay('saturday')">
+      Activity 1 💕
+    </button>
 
-    <section class="day">
-      <h2>Sunday 🌸</h2>
-      <ul>
-        <li>11:00 AM – Brunch 🥐</li>
-        <li>1:00 PM – Final Walk + Photos 📸</li>
-        <li>3:00 PM – Head Home 💕</li>
-      </ul>
-    </section>
+    <div class="accordion-content" id="saturday">
+      <p>12:15 PM - 1:15PM – Puppy Yoga @ Woof Wellness ☕</p>
+      <p>https://www.woofwellnessnyc.com/woof-wellness </p>
+    </div>
+  </div>
 
-    <button onclick="showMessage()">Click for a Surprise 💌</button>
+    <!-- Saturday -->
+  <div class="accordion-item">
+    <button class="accordion-btn" onclick="toggleDay('monday')">
+      Activity 2 💕
+    </button>
 
-    <p id="message"></p>
+    <div class="accordion-content" id="monday">
+      <p>2:00 PM - 4:00PM – Pottery Class @ Dusty Co Ceramic ☕</p>
+      <p>https://www.dustycoceramic.com</p>
+      <p> 8 min walk from Yoga </p>
+    </div>
+  </div>
 
-  </main>
+  <!-- Sunday -->
+  <div class="accordion-item">
+    <button class="accordion-btn" onclick="toggleDay('sunday')">
+      Dinner 🌸
+    </button>
+
+    <div class="accordion-content" id="sunday">
+      <p> 7:00 PM - Dinner @ Go Nonna in Long Island City🥐 Menu</p>
+      <p>9:00 PM – Ice Cream @ Emack and Bolios</p>
+      <p>10:00 PM – Head Back Home ❤️</p>
+    </div>
+  </div>
 
   <script src="script2.js"></script>
 </body>
