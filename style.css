@@ -69,8 +69,9 @@ h1{
 }
 
 @media (max-width: 480px) {
-    .hero { padding: 2rem 0.5rem; justify-content: space-between; }
+    .hero { padding: 2rem 0.5rem; justify-content: flex-end; }
     .timebox {
+        order: 3;
         gap: 0.5rem;
         flex-wrap: nowrap;
         overflow-x: auto;
@@ -79,12 +80,18 @@ h1{
         width: 100%;
         margin-bottom: 0.75rem;
     }
+    h1 {
+        order: 2;
+        align-self: flex-end;
+        margin: 0 0.6rem 0.25rem 0;
+        text-align: right;
+        font-size: clamp(1rem, 6vw, 1.8rem);
+    }
     .time {
         flex: 0 0 auto;
         min-width: 80px;
         padding: 0.25rem 0.5rem;
     }
     .time h2 { font-size: clamp(1rem, 8vw, 1.6rem); line-height: 1; white-space: nowrap; }
-    h1 { margin-bottom: 12px; }
  }
 
