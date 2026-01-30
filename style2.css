@@ -1,1 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff0f5;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background: pink;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.day {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px;
+  font-size: 1.1rem;
+}
+
+button {
+  background: hotpink;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: deeppink;
+}
+
+#message {
+  font-size: 1.3rem;
+  margin-top: 15px;
+  color: darkred;
+}
 
