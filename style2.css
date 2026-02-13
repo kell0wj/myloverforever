@@ -56,3 +56,9 @@ button:hover {
   color: darkred;
 }
 
+.itinerary-panel {
+  display: none; /* hidden by default */
+}
+.itinerary-block.open .itinerary-panel {
+  display: block;
+}
