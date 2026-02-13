@@ -57,21 +57,8 @@ button:hover {
 }
 
 .itinerary-panel {
-  display: none; /* hidden by default */
+  display: none !important;
 }
 .itinerary-block.open .itinerary-panel {
-  display: block;
+  display: block !important;
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.itinerary-toggle').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const block = btn.closest('.itinerary-block');
-      const panel = block.querySelector('.itinerary-panel');
-      const opened = block.classList.toggle('open');
-      panel.style.display = opened ? 'block' : 'none';
-      btn.setAttribute('aria-expanded', opened);
-      panel.setAttribute('aria-hidden', !opened);
-    });
-  });
-});
