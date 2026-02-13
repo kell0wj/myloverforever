@@ -8,4 +8,3 @@ function toggleDay(dayId) {
     content.style.display = "block";
   }
 }
-
